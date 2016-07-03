@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="easyColor">#71b6d1</color>
+    <color name="mediumColor">#a1d68f</color>
+    <color name="hardColor">#dfb768</color>
+    <color name="nightmareColor">#d15f59</color>
+</resources>

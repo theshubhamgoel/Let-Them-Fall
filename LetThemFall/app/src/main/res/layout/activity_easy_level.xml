@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/easyColor"
+    tools:context="games.shubham.com.letthemfall.EasyLevel">
+
+    <View
+        android:id="@+id/boarder1"
+        android:layout_width="10dp"
+        android:layout_height="fill_parent"
+        android:background="#372f2f" />
+
+    <View
+        android:id="@+id/boarder2"
+        android:layout_width="10dp"
+        android:layout_height="fill_parent"
+        android:layout_alignParentRight="true"
+        android:background="#372f2f" />
+
+    <ImageView
+        android:id="@+id/hurdle1"
+        android:layout_width="40dp"
+        android:layout_height="35dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="600dp"
+        android:layout_toEndOf="@+id/boarder1"
+        android:background="@android:color/transparent"
+        android:src="@drawable/lefttrangle" />
+
+    <ImageView
+        android:id="@+id/hurdle2"
+        android:layout_width="40dp"
+        android:layout_height="35dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="900dp"
+        android:layout_toEndOf="@+id/boarder1"
+        android:background="@android:color/transparent"
+        android:src="@drawable/lefttrangle" />
+
+    <ImageView
+        android:id="@+id/hurdle3"
+        android:layout_width="40dp"
+        android:layout_height="35dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="1200dp"
+        android:layout_toEndOf="@+id/boarder1"
+        android:background="@android:color/transparent"
+        android:src="@drawable/lefttrangle" />
+
+    <ImageView
+        android:id="@+id/hurdle4"
+        android:layout_width="40dp"
+        android:layout_height="35dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="450dp"
+        android:layout_toStartOf="@+id/boarder2"
+        android:background="@android:color/transparent"
+        android:src="@drawable/righttrangle" />
+
+    <ImageView
+        android:id="@+id/hurdle5"
+        android:layout_width="40dp"
+        android:layout_height="35dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="750dp"
+        android:layout_toStartOf="@+id/boarder2"
+        android:background="@android:color/transparent"
+        android:src="@drawable/righttrangle" />
+
+    <ImageView
+        android:id="@+id/hurdle6"
+        android:layout_width="40dp"
+        android:layout_height="35dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="1500dp"
+        android:layout_toStartOf="@+id/boarder2"
+        android:background="@android:color/transparent"
+        android:src="@drawable/righttrangle" />
+
+    <TextView
+        android:id="@+id/scoreId"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/hurdle4"
+        android:layout_alignParentTop="true"
+        android:layout_marginRight="10dp"
+        android:text="Score : 0"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textSize="25dp" />
+
+    <ImageView
+        android:id="@+id/easyPlayer"
+        android:layout_width="30dp"
+        android:layout_height="60dp"
+        android:layout_alignParentLeft="false"
+        android:layout_marginTop="150dp"
+        android:background="@android:color/transparent"
+        android:src="@drawable/playerleft" />
+
+    <TextView
+        android:id="@+id/gameOver"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:text="Game Over"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textSize="30dp"
+        android:visibility="invisible" />
+
+</RelativeLayout>

@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="games.shubham.com.letthemfall.HomePage"
+    android:background="#f3e9e9">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="  Let Them Fall  "
+        android:id="@+id/GameTitle"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:textSize="40dp"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Easy\nBest : 0"
+        android:id="@+id/easybtn"
+        android:layout_below="@+id/GameTitle"
+        android:layout_alignStart="@+id/GameTitle"
+        android:layout_marginTop="40dp"
+        android:layout_alignEnd="@+id/GameTitle"
+        android:background="@drawable/easybutton"
+        android:layout_marginBottom="20dp"
+        android:onClick="startEasyLevel"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Medium\nBest : 0"
+        android:id="@+id/mediumbtn"
+        android:layout_alignBottom="@+id/hardbtn"
+        android:layout_alignStart="@+id/easybtn"
+        android:layout_marginLeft="20dp"
+        android:background="@drawable/mediumbutton" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hard\nBest : 0"
+        android:id="@+id/hardbtn"
+        android:layout_below="@+id/easybtn"
+        android:layout_alignEnd="@+id/easybtn"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/hardbutton" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="NightMare\nBest : 0"
+        android:id="@+id/nightmarebtn"
+        android:layout_below="@+id/mediumbtn"
+        android:layout_marginTop="20dp"
+        android:layout_alignEnd="@+id/easybtn"
+        android:layout_alignStart="@+id/easybtn"
+        android:background="@drawable/nightmarebutton" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="v 1.0"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Developed by: Shubham Goel"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true" />
+
+</RelativeLayout>
